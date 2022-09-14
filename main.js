@@ -7,14 +7,22 @@
 // Math.floor()
 // Math.ceil()
 
-// Math.trunc() Remueve el decimal de un número, convirtiéndolo en un entero 
+// Math.max() retorna el numero mayor entre 2 o varios numeros
+
+confirm("confirma para ver el numero mayor \n50,1235,5876,5684,10231,85321"  );
 
 
-let decimal = Number(prompt(`Digita un numero decima`,2.5));
+const max = [50,1235,5876,5684,10231,85321];
+
+let maximo = Math.max(...max);
+
+console.log(maximo);
 
 
-function entero(d) {
-   return  Math.trunc(d); 
-}
+document.querySelector('h1').innerHTML = maximo;
 
-document.querySelector('h1').innerHTML = `numero entero es: ${entero(decimal)}`;
+
+
+
+
+
