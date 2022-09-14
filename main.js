@@ -20,6 +20,6 @@ console.log(numeroAleatorio);
 
 
 
-
+document.querySelector('h1').innerHTML = `el numero ganador es: ${numeroAleatorio}`
 
 
